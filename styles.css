@@ -1,0 +1,190 @@
+/* Main styles for Rock Paper Scissors game */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    background-color: #f3f4f6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .container {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    width: 100%;
+    max-width: 28rem;
+  }
+  
+  h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+  }
+  
+  .game-info {
+    margin-bottom: 2rem;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .info-label {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #4b5563;
+  }
+  
+  .choice-display {
+    display: flex;
+    align-items: center;
+  }
+  
+  .choice-text {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+  }
+  
+  .computer-choice {
+    color: #3b82f6;
+  }
+  
+  .your-choice {
+    color: #10b981;
+  }
+  
+  .result {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #f59e0b;
+  }
+  
+  .result.win {
+    color: #10b981;
+  }
+  
+  .result.lose {
+    color: #ef4444;
+  }
+  
+  .result.tie {
+    color: #6b7280;
+  }
+  
+  .choice-image {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 0.5rem;
+  }
+  
+  .buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .choice-button {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 700;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .choice-button:hover {
+    background-color: rgba(59, 130, 246, 0.8);
+  }
+  
+  #rock {
+    background-color: #3b82f6;
+  }
+  
+  #rock:hover {
+    background-color: rgba(59, 130, 246, 0.8);
+  }
+  
+  #paper {
+    background-color: #10b981;
+  }
+  
+  #paper:hover {
+    background-color: rgba(16, 185, 129, 0.8);
+  }
+  
+  #scissors {
+    background-color: #f59e0b;
+  }
+  
+  #scissors:hover {
+    background-color: rgba(245, 158, 11, 0.8);
+  }
+  
+  .button-image {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .reset-container {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  #reset {
+    background-color: #6b7280;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  #reset:hover {
+    background-color: #4b5563;
+  }
+  
+  @media (max-width: 640px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    .buttons-grid {
+      gap: 0.5rem;
+    }
+  
+    .choice-button {
+      padding: 0.75rem 0.25rem;
+    }
+  
+    .button-image {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+  
+  
