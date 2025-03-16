@@ -84,7 +84,7 @@ function getResult() {
       { opacity: 1, transform: "translateY(0)" },
     ],
     {
-      duration: 1000,
+      duration: 2000,
       easing: "ease-out",
     },
   )
