@@ -8,14 +8,12 @@ const resetButton = document.getElementById("reset")
 const possibleChoices = document.querySelectorAll(".choice-button")
 const choices = ["rock", "paper", "scissors"]
 
-// Image URLs - replace with actual image URLs if you have them
 const imageUrls = {
-  rock: "https://v0.dev/placeholder.svg?height=50&width=50",
-  paper: "https://v0.dev/placeholder.svg?height=50&width=50",
-  scissors: "https://v0.dev/placeholder.svg?height=50&width=50",
+  rock: "rock.png",
+  paper: "paper.png",
+  scissors: "scissors.png",
 }
 
-// Preload images
 const images = {}
 for (const choice of choices) {
   images[choice] = new Image()
@@ -33,7 +31,6 @@ possibleChoices.forEach((possibleChoice) => {
     userChoice = e.currentTarget.id
     userChoiceFinal.innerHTML = userChoice
 
-    // Display user choice image
     yourImage.innerHTML = ""
     const img = images[userChoice].cloneNode(true)
     yourImage.appendChild(img)
@@ -52,7 +49,6 @@ function generateComputerChoice() {
   computerChoice = choices[randomNum]
   computerChoiceFinal.innerHTML = computerChoice
 
-  // Display computer choice image
   computerImage.innerHTML = ""
   const img = images[computerChoice].cloneNode(true)
   computerImage.appendChild(img)
@@ -80,7 +76,6 @@ function getResult() {
 
   resultDisp.innerHTML = result
 
-  // Add animation effect
   resultDisp.animate(
     [
       { opacity: 0, transform: "translateY(-10px)" },
@@ -102,8 +97,6 @@ function resetGame() {
   resultDisp.className = "result"
 }
 
-// Initialize button images
 document.getElementById("rock-img").src = imageUrls.rock
 document.getElementById("paper-img").src = imageUrls.paper
 document.getElementById("scissors-img").src = imageUrls.scissors
-
