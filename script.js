@@ -37,8 +37,14 @@ possibleChoices.forEach((possibleChoice) => {
     const img = images[userChoice].cloneNode(true)
     yourImage.appendChild(img)
 
-    generateComputerChoice()
-    getResult()
+    setTimeout(() => {
+      generateComputerChoice()
+    }, 300);
+    setTimeout(() => {
+      getResult()
+    }, 800);
+
+    
   })
 })
 
@@ -84,8 +90,7 @@ function getResult() {
       { opacity: 1, transform: "translateY(0)" },
     ],
     {
-      duration: 2000,
-      easing: "ease-out",
+      duration: 1000
     },
   )
 }
