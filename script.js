@@ -8,7 +8,7 @@ const resetButton = document.getElementById("reset")
 let score = new Array();
 
 const possibleChoices = document.querySelectorAll(".choice-button")
-const choices = ["rock", "paper", "scissors"]
+const choices = ["Rock", "Paper", "Scissors"]
 
 const imageUrls = {
   rock: "rock.png",
@@ -85,10 +85,6 @@ function getResult() {
   resultDisp.innerHTML = result
 
   resultDisp.animate(
-    [
-      { opacity: 0, transform: "translateY(-10px)" },
-      { opacity: 1, transform: "translateY(0)" },
-    ],
     {
       duration: 1000
     },
