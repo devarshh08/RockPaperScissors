@@ -34,20 +34,22 @@
   }
   
   .game-info {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   
   .info-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   
   .info-label {
     font-size: 1.125rem;
     font-weight: 500;
     color: #4b5563;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   
   .choice-display {
@@ -70,7 +72,7 @@
   }
   
   .result {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #f59e0b;
   }
