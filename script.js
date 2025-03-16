@@ -5,6 +5,8 @@ const computerImage = document.getElementById("computer-image")
 const yourImage = document.getElementById("your-image")
 const resetButton = document.getElementById("reset")
 
+let score = new Array();
+
 const possibleChoices = document.querySelectorAll(".choice-button")
 const choices = ["rock", "paper", "scissors"]
 
@@ -82,7 +84,7 @@ function getResult() {
       { opacity: 1, transform: "translateY(0)" },
     ],
     {
-      duration: 300,
+      duration: 1000,
       easing: "ease-out",
     },
   )
